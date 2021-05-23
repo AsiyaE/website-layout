@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,300&display=swap');
+@font-face {
+	font-family: "HelveticaThin"; 
+	font-style: normal; 
+	font-weight: normal; 
+	src: url("fonts/HelveticaNeueCyr-Light.otf") format("truetype"); 
+}
+@font-face {
+	font-family: "HelveticaMedium"; 
+	font-style: normal; 
+	font-weight: normal; 
+	src: url("fonts/HelveticaNeueCyr-Medium.otf") format("truetype"); 
+} 
+body {
+	font-family: 'Montserrat', sans-serif;
+	margin: 0;
+	max-width:100%;
+}
+a { 
+	color:#000;
+	text-decoration: none; 
+} 
+h1{
+	color:#fff;
+	font: 28px "HelveticaMedium";
+	letter-spacing:1.5px;
+	margin-top:12px;
+	text-align: center;
+}
+h2{
+	font-size:20px;
+	padding-left: 30px;
+}
+
+/*картинка доктора, поисковая строка*/
+.header{
+	background: no-repeat linear-gradient(to bottom,#73E1D9, rgba(255, 255, 255, 0.8));
+	border-radius: 0 0 40px 40px;
+	box-sizing: border-box;
+	height:317px;
+	padding:54px 20px 10px;
+}
+
+.header__picture{
+	background-image:url(img/home_page/doctor.png);
+	height:114px;
+	margin: 0 auto;
+	width:114px;
+}
+
+.header__specialist{
+	box-sizing: border-box;
+	display:flex;
+	justify-content: center;
+	width:100%;
+}
+/*поиск*/
+form#header__search-form{
+	background-color: #fff;
+	border-radius: 7px;
+	box-shadow:0 4px 2px rgba(0,0,0,0.1);
+	box-sizing: border-box;
+	flex-basis: 331px;
+	height: 46px;
+	padding: 5px 16px;
+	position: relative;
+  }
+
+  input#header__search-form__field {
+	background-color:#fff ;
+	border-radius: 3px;
+	border: solid #fff ;
+	font: 16px 'Montserrat', sans-serif;
+	height:37px;
+	outline:none;
+	vertical-align: top;
+	
+}
+.header__search-form__submit {
+	background-color:rgba(90, 185, 248, 0);
+	border:none;
+	padding:5px 8px 5px 0;
+}
+
+/*главная часть - скроллы*/
+.scroll{
+	margin-bottom: 30px;
+	overflow-x: auto;
+	overflow-y: hidden;
+	padding: 6px 0;
+	position: relative;
+	white-space: nowrap;
+}
+
+.scroll__block{
+	border-radius: 20px;
+	box-shadow:0 0 5px rgba(0,0,0,0.5);
+	display:inline-block;
+	font: 14px "HelveticaThin";
+	height:118px;
+	margin:0 3px;
+	text-align: center;
+	width:106px;
+}
+.scroll-second{
+	margin-bottom: 90px;
+}
+.first-block{
+	margin-left:20px;
+}
+
+.scroll__block__img{
+	display:block;
+	margin: 10px auto 6px;
+}
+
+footer{
+	background-color: #fff;
+	bottom: 0;
+	box-sizing: border-box;
+	height:70px;
+	position:fixed;
+	width:100%;
+}
+.footer__wrapper{
+	display:flex;
+	font-size: 9px;
+	justify-content: space-around;
+	padding: 5px 20px;
+}
+.footer__wrapper__button{
+	align-items: center;
+	display:flex;
+	flex-direction:column;
+}
